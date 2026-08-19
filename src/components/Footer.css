@@ -1,0 +1,844 @@
+/* ============================================================
+   COFFEE JUNCTION PREMIUM FOOTER
+   UNIQUE PREFIX: CJF-FOOTER
+============================================================ */
+
+.cjf-footer,
+.cjf-footer *,
+.cjf-footer *::before,
+.cjf-footer *::after {
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   MAIN FOOTER
+============================================================ */
+
+.cjf-footer {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  padding:
+    85px
+    30px
+    28px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #080604 0%,
+      #0d0805 45%,
+      #060403 100%
+    );
+
+  color: #f4e8d5;
+
+  isolation: isolate;
+}
+
+
+/* ============================================================
+   BACKGROUND GLOW
+============================================================ */
+
+.cjf-footer__glow {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 20%,
+      rgba(152, 91, 22, 0.14),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 15% 70%,
+      rgba(159, 96, 23, 0.06),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(159, 96, 23, 0.06),
+      transparent 30%
+    );
+}
+
+
+/* subtle top border */
+
+.cjf-footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  width: 75%;
+
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #a86c1a,
+      transparent
+    );
+}
+
+
+/* ============================================================
+   CONTAINER
+============================================================ */
+
+.cjf-footer__container {
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+
+/* ============================================================
+   BRAND
+============================================================ */
+
+.cjf-footer__brand {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 24px;
+
+  margin-bottom: 38px;
+}
+
+
+.cjf-footer__brand-line {
+  width: 85px;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #a76c1b
+    );
+}
+
+
+.cjf-footer__brand-line:last-child {
+  background:
+    linear-gradient(
+      90deg,
+      #a76c1b,
+      transparent
+    );
+}
+
+
+/* ============================================================
+   LOGO
+============================================================ */
+
+.cjf-footer__logo {
+  position: relative;
+
+  width: 92px;
+
+  height: 92px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    #a86c1b;
+
+  border-radius: 50%;
+
+  color: #bd7d21;
+
+  background:
+    radial-gradient(
+      circle,
+      #1b1007 0%,
+      #090604 75%
+    );
+
+  box-shadow:
+    0 0 0 7px rgba(9, 6, 3, 0.7),
+    0 0 35px rgba(180, 113, 25, 0.07);
+}
+
+
+.cjf-footer__logo::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 6px;
+
+  border:
+    1px solid
+    rgba(183, 120, 28, 0.25);
+
+  border-radius: 50%;
+}
+
+
+.cjf-footer__logo-icon {
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 4px;
+
+  font-size: 22px;
+}
+
+
+.cjf-footer__logo-name {
+  position: relative;
+
+  z-index: 2;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 7px;
+
+  letter-spacing: 3px;
+
+  line-height: 1.3;
+}
+
+
+.cjf-footer__logo-name--bottom {
+  margin-top: 1px;
+}
+
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.cjf-footer__hero {
+  text-align: center;
+
+  margin-bottom: 55px;
+}
+
+
+/* ============================================================
+   EYEBROW
+============================================================ */
+
+.cjf-footer__eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+
+  color: #bd7d21;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 11px;
+
+  letter-spacing: 4px;
+}
+
+
+.cjf-footer__eyebrow span {
+  width: 40px;
+
+  height: 1px;
+
+  background: #a86c1a;
+}
+
+
+/* ============================================================
+   FOOTER HEADING
+============================================================ */
+
+.cjf-footer__hero h2 {
+  margin: 0;
+
+  color: #f2e5d1;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 48px;
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -1px;
+}
+
+
+.cjf-footer__hero h2 em {
+  color: #c18428;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+
+.cjf-footer__hero p {
+  margin:
+    20px
+    0
+    0;
+
+  color: #ad987c;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   INFORMATION GRID
+============================================================ */
+
+.cjf-footer__info {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  width: 100%;
+
+  border:
+    1px solid
+    rgba(168, 108, 26, 0.22);
+
+  background:
+    rgba(21, 12, 6, 0.45);
+}
+
+
+/* ============================================================
+   INFO ITEM
+============================================================ */
+
+.cjf-footer__info-item {
+  min-height: 125px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 17px;
+
+  padding: 25px;
+
+  border-right:
+    1px solid
+    rgba(168, 108, 26, 0.22);
+}
+
+
+.cjf-footer__info-item:last-child {
+  border-right: none;
+}
+
+
+/* ============================================================
+   INFO ICON
+============================================================ */
+
+.cjf-footer__info-icon {
+  width: 50px;
+
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    #9f6719;
+
+  border-radius: 50%;
+
+  background:
+    #100a05;
+
+  color: #bd7d21;
+
+  font-size: 17px;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+.cjf-footer__info-item:hover
+.cjf-footer__info-icon {
+  transform: translateY(-3px);
+
+  border-color: #d0922c;
+}
+
+
+/* ============================================================
+   INFO TEXT
+============================================================ */
+
+.cjf-footer__info-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #bd7d21;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+}
+
+
+.cjf-footer__info-item p {
+  margin: 0;
+
+  color: #d6c2a5;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   SOCIAL
+============================================================ */
+
+.cjf-footer__socials {
+  display: flex;
+
+  gap: 9px;
+}
+
+
+.cjf-footer__socials a {
+  width: 31px;
+
+  height: 31px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(168, 108, 26, 0.65);
+
+  border-radius: 50%;
+
+  color: #bd7d21;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.cjf-footer__socials a:hover {
+  background: #b8791e;
+
+  color: #100a05;
+
+  transform: translateY(-3px);
+}
+
+
+/* ============================================================
+   DIVIDER
+============================================================ */
+
+.cjf-footer__divider {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin:
+    50px
+    0
+    25px;
+}
+
+
+.cjf-footer__divider span {
+  width: 130px;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(168, 108, 26, 0.55)
+    );
+}
+
+
+.cjf-footer__divider span:last-of-type {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(168, 108, 26, 0.55),
+      transparent
+    );
+}
+
+
+.cjf-footer__divider svg {
+  color: #bd7d21;
+
+  font-size: 15px;
+}
+
+
+/* ============================================================
+   BOTTOM
+============================================================ */
+
+.cjf-footer__bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #776652;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 0.3px;
+}
+
+
+.cjf-footer__bottom p {
+  margin: 0;
+}
+
+
+.cjf-footer__bottom span {
+  color: #b97920;
+}
+
+
+/* ============================================================
+   BACK TO TOP
+============================================================ */
+
+.cjf-footer__top {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    #986317;
+
+  border-radius: 50%;
+
+  background:
+    #0c0704;
+
+  color: #bd7d21;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.cjf-footer__top:hover {
+  background: #b97920;
+
+  color: #0c0704;
+
+  transform: translateY(-4px);
+}
+
+
+/* ============================================================
+   900px
+============================================================ */
+
+@media (max-width: 900px) {
+
+  .cjf-footer {
+    padding:
+      75px
+      25px
+      25px;
+  }
+
+
+  .cjf-footer__hero h2 {
+    font-size: 42px;
+  }
+
+
+  .cjf-footer__info-item {
+    padding: 20px;
+
+    gap: 12px;
+  }
+
+
+  .cjf-footer__info-icon {
+    width: 44px;
+
+    height: 44px;
+
+    font-size: 15px;
+  }
+
+}
+
+
+/* ============================================================
+   700px
+============================================================ */
+
+@media (max-width: 700px) {
+
+  .cjf-footer {
+    padding:
+      65px
+      18px
+      25px;
+  }
+
+
+  .cjf-footer__hero {
+    margin-bottom: 40px;
+  }
+
+
+  .cjf-footer__hero h2 {
+    font-size: 37px;
+  }
+
+
+  .cjf-footer__hero p br {
+    display: none;
+  }
+
+
+  .cjf-footer__info {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cjf-footer__info-item {
+    justify-content: flex-start;
+
+    min-height: 100px;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid
+      rgba(168, 108, 26, 0.22);
+  }
+
+
+  .cjf-footer__info-item:last-child {
+    border-bottom: none;
+  }
+
+
+  .cjf-footer__divider {
+    margin-top: 40px;
+  }
+
+
+  .cjf-footer__divider span {
+    width: 70px;
+  }
+
+
+  .cjf-footer__bottom {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    text-align: center;
+  }
+
+
+  .cjf-footer__top {
+    order: -1;
+  }
+
+}
+
+
+/* ============================================================
+   480px
+============================================================ */
+
+@media (max-width: 480px) {
+
+  .cjf-footer {
+    padding:
+      55px
+      15px
+      22px;
+  }
+
+
+  .cjf-footer__brand {
+    gap: 15px;
+
+    margin-bottom: 30px;
+  }
+
+
+  .cjf-footer__brand-line {
+    width: 45px;
+  }
+
+
+  .cjf-footer__logo {
+    width: 78px;
+
+    height: 78px;
+  }
+
+
+  .cjf-footer__eyebrow {
+    gap: 8px;
+
+    font-size: 8px;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .cjf-footer__eyebrow span {
+    width: 22px;
+  }
+
+
+  .cjf-footer__hero h2 {
+    font-size: 32px;
+  }
+
+
+  .cjf-footer__hero p {
+    font-size: 13px;
+  }
+
+
+  .cjf-footer__info-item {
+    padding: 18px;
+  }
+
+
+  .cjf-footer__divider span {
+    width: 45px;
+  }
+
+
+  .cjf-footer__bottom {
+    font-size: 9px;
+  }
+
+}

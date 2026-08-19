@@ -1,0 +1,854 @@
+/* ============================================================ 
+   COFFEE JUNCTION NAVBAR 
+   DESKTOP DESIGN 
+============================================================ */ 
+ 
+.navbar { 
+  position: absolute; 
+ 
+  top: 0; 
+  left: 0; 
+ 
+  width: 100%; 
+  min-height: 78px; 
+ 
+  padding: 14px 5%; 
+ 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+ 
+  z-index: 1000; 
+ 
+  background: rgba(5, 4, 3, 0.42); 
+ 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+ 
+  border-bottom: 
+    1px solid rgba(212, 162, 77, 0.14); 
+} 
+ 
+ 
+/* ============================================================ 
+   LOGO 
+============================================================ */ 
+ 
+.logo { 
+  display: flex; 
+ 
+  align-items: center; 
+ 
+  gap: 10px; 
+ 
+  flex-shrink: 0; 
+ 
+  cursor: pointer; 
+ 
+  text-decoration: none; 
+ 
+  color: inherit; 
+} 
+ 
+.logo img { 
+  width: 52px; 
+  height: 52px; 
+ 
+  object-fit: contain; 
+ 
+  display: block; 
+} 
+ 
+.logo h2 { 
+  margin: 0; 
+ 
+  color: #f5ead8; 
+ 
+  font-family: 
+    Georgia, 
+    "Times New Roman", 
+    serif; 
+ 
+  font-size: 23px; 
+ 
+  font-weight: 500; 
+ 
+  white-space: nowrap; 
+ 
+  letter-spacing: 0.5px; 
+} 
+ 
+ 
+/* ============================================================ 
+   DESKTOP MENU 
+============================================================ */ 
+ 
+.desktop-menu { 
+  display: flex; 
+ 
+  align-items: center; 
+  justify-content: center; 
+ 
+  gap: clamp(20px, 2.5vw, 36px); 
+ 
+  margin: 0 auto; 
+ 
+  padding: 0 30px; 
+ 
+  list-style: none; 
+ 
+  flex: 1; 
+} 
+ 
+ 
+/* ============================================================ 
+   DESKTOP MENU ITEMS 
+============================================================ */ 
+ 
+.desktop-menu li { 
+  position: relative; 
+ 
+  color: #eee2cf; 
+ 
+  cursor: pointer; 
+ 
+  font-family: 
+    Arial, 
+    Helvetica, 
+    sans-serif; 
+ 
+  font-size: 16px; 
+ 
+  font-weight: 400; 
+ 
+  letter-spacing: 0.2px; 
+ 
+  white-space: nowrap; 
+ 
+  transition: 
+    color 0.3s ease; 
+} 
+ 
+ 
+/* ============================================================ 
+   DESKTOP LINKS 
+============================================================ */ 
+ 
+.desktop-menu li a { 
+  display: block; 
+ 
+  color: inherit; 
+ 
+  text-decoration: none; 
+ 
+  transition: 
+    color 0.3s ease; 
+} 
+ 
+.desktop-menu li a:link, 
+.desktop-menu li a:visited, 
+.desktop-menu li a:hover, 
+.desktop-menu li a:active { 
+  text-decoration: none; 
+} 
+
+
+/* ============================================================ 
+   DESKTOP NAV BUTTONS 
+   SAME STYLE AS HOME / MENU
+============================================================ */
+
+.desktop-menu li button {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: inherit;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  letter-spacing: 0.2px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease;
+}
+
+.desktop-menu li button:hover,
+.desktop-menu li:hover button {
+  color: #d4a24d;
+}
+ 
+ 
+/* ============================================================ 
+   DESKTOP HOVER 
+============================================================ */ 
+ 
+.desktop-menu li:hover { 
+  color: #d4a24d; 
+} 
+ 
+.desktop-menu li:hover a { 
+  color: #d4a24d; 
+} 
+ 
+ 
+/* ============================================================ 
+   DESKTOP VISIT BUTTON 
+============================================================ */ 
+ 
+.visit-btn { 
+  flex-shrink: 0; 
+ 
+  padding: 11px 22px; 
+ 
+  border: 
+    1px solid rgba(212, 162, 77, 0.7); 
+ 
+  border-radius: 3px; 
+ 
+  background: transparent; 
+ 
+  color: #d4a24d; 
+ 
+  font-family: 
+    Arial, 
+    Helvetica, 
+    sans-serif; 
+ 
+  font-size: 12px; 
+ 
+  font-weight: 500; 
+ 
+  letter-spacing: 1px; 
+ 
+  white-space: nowrap; 
+ 
+  cursor: pointer; 
+ 
+  transition: 
+    background 0.3s ease, 
+    color 0.3s ease, 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease; 
+} 
+ 
+.visit-btn:hover { 
+  background: #d4a24d; 
+ 
+  color: #120c06; 
+ 
+  transform: translateY(-2px); 
+ 
+  box-shadow: 
+    0 8px 20px rgba(212, 162, 77, 0.22); 
+} 
+ 
+ 
+/* ============================================================ 
+   MOBILE TOGGLE 
+   HIDDEN ON DESKTOP 
+============================================================ */ 
+ 
+.menu-toggle { 
+  display: none; 
+} 
+ 
+ 
+/* ============================================================ 
+   MOBILE MENU 
+   HIDDEN ON DESKTOP 
+============================================================ */ 
+ 
+.mobile-menu { 
+  display: none; 
+} 
+ 
+ 
+/* ============================================================ 
+   MOBILE ONLY 
+   NOTHING ABOVE THIS POINT IS CHANGED 
+============================================================ */ 
+ 
+@media (max-width: 700px) { 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE NAVBAR 
+  ---------------------------------------------------------- */ 
+ 
+  .navbar { 
+    position: relative !important; 
+ 
+    top: auto !important; 
+    left: auto !important; 
+ 
+    width: 100% !important; 
+ 
+    height: auto !important; 
+    min-height: 68px !important; 
+ 
+    padding: 10px 5% !important; 
+ 
+    display: flex !important; 
+ 
+    flex-wrap: wrap !important; 
+ 
+    align-items: center !important; 
+ 
+    justify-content: space-between !important; 
+ 
+    box-sizing: border-box; 
+ 
+    background: 
+      rgba(5, 4, 3, 0.98); 
+ 
+    z-index: 9999; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     HIDE DESKTOP ITEMS 
+  ---------------------------------------------------------- */ 
+ 
+  .desktop-menu, 
+  .visit-btn { 
+    display: none !important; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE LOGO 
+  ---------------------------------------------------------- */ 
+ 
+  .logo { 
+    display: flex !important; 
+ 
+    align-items: center !important; 
+ 
+    gap: 8px !important; 
+ 
+    height: 48px !important; 
+ 
+    margin: 0 !important; 
+ 
+    padding: 0 !important; 
+ 
+    flex-shrink: 0; 
+  } 
+ 
+  .logo img { 
+    width: 44px !important; 
+    height: 44px !important; 
+  } 
+ 
+  .logo h2 { 
+    margin: 0 !important; 
+ 
+    font-size: 19px !important; 
+ 
+    white-space: nowrap !important; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE TOGGLE 
+  ---------------------------------------------------------- */ 
+ 
+  .menu-toggle { 
+    display: flex !important; 
+ 
+    width: 44px !important; 
+    height: 44px !important; 
+ 
+    padding: 0 !important; 
+    margin: 0 !important; 
+ 
+    flex-shrink: 0; 
+ 
+    align-items: center !important; 
+    justify-content: center !important; 
+ 
+    flex-direction: column !important; 
+ 
+    gap: 5px !important; 
+ 
+    border-radius: 50% !important; 
+ 
+    position: relative !important; 
+ 
+    z-index: 10001 !important; 
+ 
+    cursor: pointer; 
+ 
+    background: 
+      #d4a24d; 
+ 
+    border: none; 
+ 
+    box-sizing: border-box; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     PREMIUM WHITE LINES 
+  ---------------------------------------------------------- */ 
+ 
+  .menu-toggle span { 
+    display: block !important; 
+ 
+    width: 21px !important; 
+ 
+    height: 2px !important; 
+ 
+    padding: 0 !important; 
+ 
+    margin: 0 !important; 
+ 
+    background: #ffffff !important; 
+ 
+    border-radius: 20px !important; 
+ 
+    box-shadow: 
+      0 0 6px rgba(255, 255, 255, 0.3); 
+ 
+    transition: 
+      transform 0.3s ease, 
+      opacity 0.25s ease, 
+      width 0.3s ease; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     HAMBURGER → X 
+  ---------------------------------------------------------- */ 
+ 
+  .menu-toggle.active span:nth-child(1) { 
+    transform: 
+      translateY(7px) 
+      rotate(45deg) !important; 
+  } 
+ 
+  .menu-toggle.active span:nth-child(2) { 
+    opacity: 0 !important; 
+ 
+    width: 0 !important; 
+  } 
+ 
+  .menu-toggle.active span:nth-child(3) { 
+    transform: 
+      translateY(-7px) 
+      rotate(-45deg) !important; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE MENU CLOSED 
+  ---------------------------------------------------------- */ 
+ 
+  .mobile-menu { 
+    display: block !important; 
+ 
+    position: relative !important; 
+ 
+    top: auto !important; 
+    left: auto !important; 
+ 
+    width: 100% !important; 
+ 
+    height: auto !important; 
+ 
+    max-height: 0 !important; 
+ 
+    margin: 0 !important; 
+ 
+    padding: 0 !important; 
+ 
+    overflow: hidden !important; 
+ 
+    opacity: 0 !important; 
+ 
+    visibility: hidden !important; 
+ 
+    pointer-events: none !important; 
+ 
+    transform: 
+      translateY(-5px); 
+ 
+    box-sizing: border-box; 
+ 
+    background: 
+      linear-gradient( 
+        180deg, 
+        #080604, 
+        #050403 
+      ); 
+ 
+    border: none; 
+ 
+    transition: 
+      max-height 0.4s ease, 
+      opacity 0.25s ease, 
+      transform 0.3s ease, 
+      padding 0.3s ease; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE MENU OPEN 
+      
+     This is the important part: 
+     menu stays in normal document flow. 
+      
+     Therefore the HERO is pushed DOWN. 
+  ---------------------------------------------------------- */ 
+ 
+  .mobile-menu.open { 
+    display: block !important; 
+ 
+    position: relative !important; 
+ 
+    width: 100% !important; 
+ 
+    height: auto !important; 
+ 
+    max-height: 450px !important; 
+ 
+    margin: 0 !important; 
+ 
+    padding: 
+      5px 5% 22px !important; 
+ 
+    overflow: hidden !important; 
+ 
+    opacity: 1 !important; 
+ 
+    visibility: visible !important; 
+ 
+    pointer-events: auto !important; 
+ 
+    transform: 
+      translateY(0) !important; 
+ 
+    box-sizing: border-box; 
+ 
+    border-top: 
+      1px solid rgba(212, 162, 77, 0.12); 
+ 
+    border-bottom: 
+      1px solid rgba(212, 162, 77, 0.15); 
+ 
+    box-shadow: 
+      0 12px 30px rgba(0, 0, 0, 0.35); 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE MENU LIST 
+  ---------------------------------------------------------- */ 
+ 
+  .mobile-menu ul { 
+    display: block !important; 
+ 
+    width: 100% !important; 
+ 
+    height: auto !important; 
+ 
+    max-height: none !important; 
+ 
+    margin: 0 !important; 
+ 
+    padding: 0 !important; 
+ 
+    list-style: none !important; 
+ 
+    overflow: visible !important; 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE MENU ITEMS 
+  ---------------------------------------------------------- */ 
+ 
+  .mobile-menu li { 
+    display: block !important; 
+ 
+    width: 100% !important; 
+ 
+    height: auto !important; 
+ 
+    min-height: 52px !important; 
+ 
+    margin: 0 !important; 
+ 
+    padding: 
+      15px 5px !important; 
+ 
+    box-sizing: border-box; 
+ 
+    list-style: none !important; 
+ 
+    border-bottom: 
+      1px solid rgba(212, 162, 77, 0.12); 
+  } 
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE LINKS 
+  ---------------------------------------------------------- */ 
+ 
+  .mobile-menu li a { 
+    display: flex !important; 
+ 
+    align-items: center !important; 
+ 
+    width: 100% !important; 
+ 
+    height: auto !important; 
+ 
+    margin: 0 !important; 
+ 
+    padding: 0 !important; 
+ 
+    color: #eee2cf !important; 
+ 
+    font-family: 
+      Arial, 
+      Helvetica, 
+      sans-serif; 
+ 
+    font-size: 15px !important; 
+ 
+    font-weight: 400 !important; 
+ 
+    line-height: 1.5 !important; 
+ 
+    text-decoration: none !important; 
+ 
+    box-sizing: border-box; 
+  } 
+ 
+ 
+  .mobile-menu li a:link, 
+  .mobile-menu li a:visited, 
+  .mobile-menu li a:hover, 
+  .mobile-menu li a:active { 
+    color: #eee2cf !important; 
+ 
+    text-decoration: none !important; 
+  } 
+
+
+  /* ----------------------------------------------------------
+     MOBILE NAV BUTTONS
+     SAME STYLE AS MOBILE LINKS
+  ---------------------------------------------------------- */
+
+  .mobile-menu li button {
+    display: flex !important;
+
+    align-items: center !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    border: none !important;
+
+    outline: none !important;
+
+    background: transparent !important;
+
+    color: #eee2cf !important;
+
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+
+    font-size: 15px !important;
+
+    font-weight: 400 !important;
+
+    line-height: 1.5 !important;
+
+    text-decoration: none !important;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+  }
+
+  .mobile-menu li button:hover,
+  .mobile-menu li button:focus,
+  .mobile-menu li button:active {
+    color: #eee2cf !important;
+
+    background: transparent !important;
+
+    outline: none !important;
+  }
+ 
+ 
+  /* ---------------------------------------------------------- 
+     MOBILE VISIT BUTTON 
+  ---------------------------------------------------------- */ 
+ 
+  .mobile-visit-btn { 
+    display: block !important; 
+ 
+    width: 100% !important; 
+ 
+    height: auto !important; 
+ 
+    margin: 
+      18px 0 0 !important; 
+ 
+    padding: 
+      13px 20px !important; 
+ 
+    border: 
+      none !important; 
+ 
+    border-radius: 
+      30px !important; 
+ 
+    background: 
+      #d4a24d !important; 
+ 
+    color: 
+      #ffffff !important; 
+ 
+    font-family: 
+      Arial, 
+      Helvetica, 
+      sans-serif; 
+ 
+    font-size: 
+      14px !important; 
+ 
+    font-weight: 
+      600 !important; 
+ 
+    letter-spacing: 
+      0.3px; 
+ 
+    cursor: 
+      pointer; 
+ 
+    box-sizing: 
+      border-box; 
+  } 
+ 
+} 
+ 
+ 
+/* ============================================================ 
+   MOBILE - 480px 
+============================================================ */ 
+ 
+@media (max-width: 480px) { 
+ 
+  .navbar { 
+    min-height: 64px !important; 
+ 
+    padding: 
+      9px 16px !important; 
+  } 
+ 
+  .logo { 
+    height: 46px !important; 
+ 
+    gap: 7px !important; 
+  } 
+ 
+  .logo img { 
+    width: 40px !important; 
+    height: 40px !important; 
+  } 
+ 
+  .logo h2 { 
+    font-size: 17px !important; 
+  } 
+ 
+  .menu-toggle { 
+    width: 42px !important; 
+    height: 42px !important; 
+  } 
+ 
+  .mobile-menu.open { 
+    padding-left: 
+      16px !important; 
+ 
+    padding-right: 
+      16px !important; 
+  } 
+ 
+} 
+ 
+ 
+/* ============================================================ 
+   MOBILE - 360px 
+============================================================ */ 
+ 
+@media (max-width: 360px) { 
+ 
+  .navbar { 
+    padding-left: 
+      12px !important; 
+ 
+    padding-right: 
+      12px !important; 
+  } 
+ 
+  .logo img { 
+    width: 37px !important; 
+    height: 37px !important; 
+  } 
+ 
+  .logo h2 { 
+    font-size: 15px !important; 
+  } 
+ 
+  .menu-toggle { 
+    width: 40px !important; 
+    height: 40px !important; 
+  } 
+ 
+  .mobile-menu li { 
+    min-height: 
+      46px !important; 
+ 
+    padding-top: 
+      13px !important; 
+ 
+    padding-bottom: 
+      13px !important; 
+  } 
+ 
+  .mobile-menu li a { 
+    font-size: 
+      14px !important; 
+  } 
+ 
+} 

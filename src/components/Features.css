@@ -1,0 +1,654 @@
+/* ============================================================
+   COFFEE JUNCTION — PREMIUM FEATURES
+   UNIQUE PREFIX: CJF
+============================================================ */
+
+.cjf-features,
+.cjf-features *,
+.cjf-features *::before,
+.cjf-features *::after {
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   MAIN SECTION
+============================================================ */
+
+.cjf-features {
+  position: relative;
+
+  width: 100%;
+
+  padding: 85px 35px 80px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #090705 0%,
+      #100a06 50%,
+      #080604 100%
+    );
+
+  color: #f4ead8;
+
+  isolation: isolate;
+}
+
+
+/* ============================================================
+   BACKGROUND
+============================================================ */
+
+.cjf-features__bg {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(132, 82, 22, 0.14),
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 10% 50%,
+      rgba(180, 112, 26, 0.06),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 50%,
+      rgba(180, 112, 26, 0.06),
+      transparent 30%
+    );
+}
+
+
+/* subtle horizontal glow */
+
+.cjf-features::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  width: 70%;
+
+  height: 1px;
+
+  transform: translate(-50%, -50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(180, 119, 28, 0.25),
+      transparent
+    );
+
+  z-index: -1;
+}
+
+
+/* ============================================================
+   CONTAINER
+============================================================ */
+
+.cjf-features__container {
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+
+/* ============================================================
+   HEADING
+============================================================ */
+
+.cjf-features__heading {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+
+/* eyebrow */
+
+.cjf-features__eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-bottom: 18px;
+
+  color: #bd7d21;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 12px;
+
+  letter-spacing: 5px;
+}
+
+
+.cjf-features__eyebrow span {
+  width: 42px;
+
+  height: 1px;
+
+  background: #a86c19;
+}
+
+
+/* heading */
+
+.cjf-features__heading h2 {
+  margin: 0;
+
+  color: #f2e6d3;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 48px;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -1px;
+}
+
+
+.cjf-features__heading h2 em {
+  color: #bd7d21;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   FEATURES GRID
+============================================================ */
+
+.cjf-features__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  width: 100%;
+}
+
+
+/* ============================================================
+   FEATURE
+============================================================ */
+
+.cjf-feature {
+  position: relative;
+
+  min-height: 225px;
+
+  padding:
+    20px
+    35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  border-right:
+    1px solid
+    rgba(180, 117, 26, 0.24);
+
+  transition:
+    background 0.4s ease,
+    transform 0.4s ease;
+}
+
+
+.cjf-feature:last-child {
+  border-right: none;
+}
+
+
+/* ============================================================
+   HOVER BACKGROUND
+============================================================ */
+
+.cjf-feature::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 15px;
+
+  border:
+    1px solid
+    rgba(183, 120, 28, 0);
+
+  transition:
+    border-color 0.4s ease,
+    background 0.4s ease;
+}
+
+
+.cjf-feature:hover::before {
+  border-color:
+    rgba(183, 120, 28, 0.22);
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(183, 120, 28, 0.07),
+      transparent 70%
+    );
+}
+
+
+/* ============================================================
+   NUMBER
+============================================================ */
+
+.cjf-feature__number {
+  position: absolute;
+
+  top: 17px;
+
+  right: 25px;
+
+  color:
+    rgba(192, 130, 37, 0.25);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+
+/* ============================================================
+   ICON
+============================================================ */
+
+.cjf-feature__icon {
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 22px;
+}
+
+
+.cjf-feature__icon-ring {
+  width: 76px;
+
+  height: 76px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    #a86d1b;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      #1c1208 0%,
+      #0a0704 75%
+    );
+
+  color: #c78a29;
+
+  font-size: 25px;
+
+  box-shadow:
+    0 0 0 7px rgba(9, 6, 3, 0.55);
+
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    color 0.45s ease;
+}
+
+
+.cjf-feature:hover
+.cjf-feature__icon-ring {
+  transform: translateY(-5px);
+
+  color: #e0a646;
+
+  border-color: #d0922c;
+
+  box-shadow:
+    0 0 0 7px rgba(9, 6, 3, 0.55),
+    0 0 25px rgba(194, 130, 32, 0.13);
+}
+
+
+/* ============================================================
+   CONTENT
+============================================================ */
+
+.cjf-feature__content {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.cjf-feature__content h3 {
+  margin: 0;
+
+  color: #d0a05a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+}
+
+
+/* ============================================================
+   GOLD LINE
+============================================================ */
+
+.cjf-feature__line {
+  width: 25px;
+
+  height: 1px;
+
+  margin: 12px auto;
+
+  background: #a96e1a;
+
+  transition:
+    width 0.4s ease;
+}
+
+
+.cjf-feature:hover
+.cjf-feature__line {
+  width: 42px;
+}
+
+
+/* ============================================================
+   DESCRIPTION
+============================================================ */
+
+.cjf-feature__content p {
+  margin: 0;
+
+  color: #aa967a;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   BOTTOM GOLD LINE
+============================================================ */
+
+.cjf-features__container::after {
+  content: "";
+
+  display: block;
+
+  width: 110px;
+
+  height: 1px;
+
+  margin:
+    55px
+    auto
+    0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #a96d1b,
+      transparent
+    );
+}
+
+
+/* ============================================================
+   LARGE TABLET
+============================================================ */
+
+@media (max-width: 1000px) {
+
+  .cjf-features {
+    padding:
+      75px
+      25px;
+  }
+
+
+  .cjf-features__heading {
+    margin-bottom: 45px;
+  }
+
+
+  .cjf-features__heading h2 {
+    font-size: 42px;
+  }
+
+
+  .cjf-feature {
+    padding:
+      20px
+      18px;
+  }
+
+
+  .cjf-feature__icon-ring {
+    width: 68px;
+
+    height: 68px;
+
+    font-size: 22px;
+  }
+
+
+  .cjf-feature__content h3 {
+    font-size: 16px;
+
+    letter-spacing: 1.5px;
+  }
+
+}
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 750px) {
+
+  .cjf-features {
+    padding:
+      65px
+      20px;
+  }
+
+
+  .cjf-features__heading h2 {
+    font-size: 38px;
+  }
+
+
+  .cjf-features__grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .cjf-feature {
+    min-height: 220px;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid
+      rgba(180, 117, 26, 0.22);
+  }
+
+
+  .cjf-feature:nth-child(odd) {
+    border-right:
+      1px solid
+      rgba(180, 117, 26, 0.22);
+  }
+
+
+  .cjf-feature:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 520px) {
+
+  .cjf-features {
+    padding:
+      55px
+      15px;
+  }
+
+
+  .cjf-features__eyebrow {
+    gap: 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .cjf-features__eyebrow span {
+    width: 25px;
+  }
+
+
+  .cjf-features__heading {
+    margin-bottom: 35px;
+  }
+
+
+  .cjf-features__heading h2 {
+    font-size: 34px;
+
+    line-height: 1.1;
+  }
+
+
+  .cjf-features__grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cjf-feature {
+    min-height: 205px;
+
+    padding:
+      30px
+      20px;
+
+    border-right: none !important;
+
+    border-bottom:
+      1px solid
+      rgba(180, 117, 26, 0.20);
+  }
+
+
+  .cjf-feature:last-child {
+    border-bottom: none;
+  }
+
+
+  .cjf-feature__number {
+    top: 17px;
+
+    right: 20px;
+  }
+
+
+  .cjf-feature__icon-ring {
+    width: 70px;
+
+    height: 70px;
+  }
+
+
+  .cjf-feature__content h3 {
+    font-size: 17px;
+  }
+
+
+  .cjf-features__container::after {
+    margin-top: 35px;
+  }
+
+}

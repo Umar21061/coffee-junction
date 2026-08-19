@@ -1,0 +1,1008 @@
+/* ============================================================
+   COFFEE JUNCTION PREMIUM MENU
+   ALL CLASSES ARE UNIQUE
+============================================================ */
+
+
+/* ============================================================
+   SECTION
+============================================================ */
+
+.cjm-menu-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 38px 34px 32px;
+
+  overflow: hidden;
+
+  background: #080605;
+
+  color: #f5ead8;
+
+  isolation: isolate;
+}
+
+
+/* ============================================================
+   BACKGROUND
+============================================================ */
+
+.cjm-menu-bg {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -3;
+
+  background:
+    radial-gradient(
+      ellipse at center top,
+      rgba(95, 58, 22, 0.20) 0%,
+      rgba(22, 13, 7, 0.45) 45%,
+      #050403 100%
+    );
+}
+
+
+.cjm-menu-dark-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.12),
+      rgba(0, 0, 0, 0.55)
+    );
+}
+
+
+/* ============================================================
+   WRAPPER
+============================================================ */
+
+.cjm-menu-wrapper {
+  width: 100%;
+
+  max-width: 1470px;
+
+  margin: 0 auto;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.cjm-menu-header {
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+
+/* ============================================================
+   EYEBROW
+============================================================ */
+
+.cjm-menu-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  margin-bottom: 16px;
+}
+
+
+.cjm-menu-line {
+  display: block;
+
+  width: 51px;
+
+  height: 1px;
+
+  background: #b77a20;
+}
+
+
+.cjm-menu-eyebrow-text {
+  color: #c0872a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  letter-spacing: 7px;
+
+  line-height: 1;
+}
+
+
+/* ============================================================
+   MAIN HEADING
+============================================================ */
+
+.cjm-menu-heading {
+  margin: 0;
+
+  padding: 0;
+
+  color: #f4ead9;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 67px;
+
+  font-weight: 500;
+
+  line-height: 0.99;
+
+  letter-spacing: -2px;
+}
+
+
+.cjm-menu-heading em {
+  color: #bd7b20;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   HEADER DESCRIPTION
+============================================================ */
+
+.cjm-menu-description {
+  margin: 21px 0 0;
+
+  padding: 0;
+
+  color: #dfc9a4;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* ============================================================
+   CARDS CONTAINER
+============================================================ */
+
+.cjm-menu-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 13px;
+
+  width: 100%;
+}
+
+
+/* ============================================================
+   CARD
+============================================================ */
+
+.cjm-menu-card {
+  position: relative;
+
+  width: 100%;
+
+  height: 605px;
+
+  overflow: hidden;
+
+  border: 1px solid #9a6419;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #171009 0%,
+      #0c0805 100%
+    );
+
+  box-shadow:
+    0 16px 35px rgba(0, 0, 0, 0.48);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.cjm-menu-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #c68a2a;
+
+  box-shadow:
+    0 25px 45px rgba(0, 0, 0, 0.65),
+    0 0 25px rgba(187, 122, 27, 0.10);
+}
+
+
+/* ============================================================
+   CARD IMAGE
+============================================================ */
+
+.cjm-menu-card-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 360px;
+
+  overflow: hidden;
+
+  background: #090604;
+}
+
+
+.cjm-menu-card-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  filter:
+    brightness(0.82)
+    contrast(1.03)
+    saturate(0.92);
+
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+}
+
+
+.cjm-menu-card:hover
+.cjm-menu-card-image img {
+  transform: scale(1.06);
+
+  filter:
+    brightness(0.94)
+    contrast(1.04)
+    saturate(1);
+}
+
+
+/* ============================================================
+   IMAGE OVERLAY
+============================================================ */
+
+.cjm-menu-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.05) 45%,
+      rgba(5, 3, 1, 0.76) 100%
+    );
+}
+
+
+/* ============================================================
+   CARD CONTENT
+============================================================ */
+
+.cjm-menu-card-content {
+  position: relative;
+
+  width: 100%;
+
+  height: 245px;
+
+  padding: 47px 12px 15px;
+
+  text-align: center;
+
+  border-top:
+    1px solid
+    rgba(183, 121, 28, 0.60);
+
+  background:
+    linear-gradient(
+      180deg,
+      #171008 0%,
+      #0c0805 100%
+    );
+}
+
+
+/* ============================================================
+   CARD ICON
+============================================================ */
+
+.cjm-menu-card-icon {
+  position: absolute;
+
+  top: -43px;
+
+  left: 50%;
+
+  width: 65px;
+
+  height: 65px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    #bc7d20;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      #1c1309 0%,
+      #080604 75%
+    );
+
+  color: #c68a2a;
+
+  font-size: 24px;
+
+  box-shadow:
+    0 0 0 7px
+    rgba(9, 6, 3, 0.88);
+
+  z-index: 5;
+}
+
+
+/* ============================================================
+   CARD TITLE
+============================================================ */
+
+.cjm-menu-card-title {
+  margin: 0;
+
+  padding: 0;
+
+  color: #c58a2a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 26px;
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: 0.2px;
+
+  text-transform: uppercase;
+}
+
+
+/* ============================================================
+   CARD DECORATION
+============================================================ */
+
+.cjm-menu-card-decoration {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin:
+    15px
+    0
+    16px;
+}
+
+
+.cjm-menu-card-decoration span {
+  position: relative;
+
+  display: block;
+
+  width: 30px;
+
+  height: 2px;
+
+  background: #b9781d;
+}
+
+
+.cjm-menu-card-decoration span::before,
+.cjm-menu-card-decoration span::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  width: 4px;
+
+  height: 4px;
+
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  background: #b9781d;
+}
+
+
+.cjm-menu-card-decoration span::before {
+  left: -9px;
+}
+
+
+.cjm-menu-card-decoration span::after {
+  right: -9px;
+}
+
+
+/* ============================================================
+   CARD TEXT
+============================================================ */
+
+.cjm-menu-card-text {
+  margin: 0;
+
+  padding: 0;
+
+  color: #dfcba9;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14.5px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   EXPLORE BUTTON
+============================================================ */
+
+.cjm-menu-explore {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 19px;
+
+  transform: translateX(-50%);
+
+  width: 158px;
+
+  height: 40px;
+
+  padding: 0;
+
+  border:
+    1px solid
+    #ad7019;
+
+  border-radius: 5px;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #c48927;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.7px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.cjm-menu-explore:hover {
+  background: #b9791e;
+
+  border-color: #b9791e;
+
+  color: #100b06;
+}
+
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+.cjm-menu-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 23px;
+
+  margin-top: 25px;
+}
+
+
+/* ============================================================
+   FOOTER LOGO
+============================================================ */
+
+.cjm-footer-logo {
+  width: 76px;
+
+  height: 76px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    #986317;
+
+  border-radius: 50%;
+
+  color: #c08325;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+}
+
+
+.cjm-footer-coffee {
+  margin-bottom: 3px;
+
+  color: #c08325;
+
+  font-size: 21px;
+
+  line-height: 1;
+}
+
+
+.cjm-footer-coffee-text,
+.cjm-footer-junction-text {
+  font-size: 7px;
+
+  line-height: 1.25;
+
+  letter-spacing: 2px;
+}
+
+
+/* ============================================================
+   FOOTER DIVIDER
+============================================================ */
+
+.cjm-footer-divider {
+  width: 1px;
+
+  height: 65px;
+
+  background:
+    rgba(
+      181,
+      117,
+      27,
+      0.50
+    );
+}
+
+
+/* ============================================================
+   FOOTER TAGLINE
+============================================================ */
+
+.cjm-footer-content {
+  text-align: left;
+}
+
+
+.cjm-footer-tagline {
+  color: #c48627;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size: 27px;
+
+  font-style: italic;
+
+  line-height: 1.1;
+
+  white-space: nowrap;
+}
+
+
+.cjm-footer-tagline b {
+  margin:
+    0
+    9px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15px;
+
+  font-style: normal;
+}
+
+
+/* ============================================================
+   FOOTER BRAND
+============================================================ */
+
+.cjm-footer-brand {
+  margin-top: 8px;
+
+  color: #bb7c22;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 6px;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   1250px
+============================================================ */
+
+@media (max-width: 1250px) {
+
+  .cjm-menu-section {
+    padding-left: 22px;
+
+    padding-right: 22px;
+  }
+
+
+  .cjm-menu-cards {
+    gap: 10px;
+  }
+
+
+  .cjm-menu-card {
+    height: 590px;
+  }
+
+
+  .cjm-menu-card-image {
+    height: 345px;
+  }
+
+
+  .cjm-menu-card-content {
+    height: 245px;
+  }
+
+
+  .cjm-menu-card-title {
+    font-size: 23px;
+  }
+
+}
+
+
+/* ============================================================
+   1000px
+============================================================ */
+
+@media (max-width: 1000px) {
+
+  .cjm-menu-cards {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+
+  .cjm-menu-card {
+    height: 590px;
+  }
+
+
+  .cjm-menu-card-image {
+    height: 345px;
+  }
+
+}
+
+
+/* ============================================================
+   750px
+============================================================ */
+
+@media (max-width: 750px) {
+
+  .cjm-menu-section {
+    padding:
+      55px
+      18px
+      35px;
+  }
+
+
+  .cjm-menu-heading {
+    font-size: 48px;
+  }
+
+
+  .cjm-menu-description {
+    font-size: 15px;
+  }
+
+
+  .cjm-menu-cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+
+  .cjm-menu-card {
+    height: 570px;
+  }
+
+
+  .cjm-menu-card-image {
+    height: 325px;
+  }
+
+
+  .cjm-menu-card-content {
+    height: 245px;
+  }
+
+}
+
+
+/* ============================================================
+   520px MOBILE
+============================================================ */
+
+@media (max-width: 520px) {
+
+  .cjm-menu-section {
+    padding:
+      48px
+      13px
+      30px;
+  }
+
+
+  .cjm-menu-eyebrow {
+    gap: 12px;
+  }
+
+
+  .cjm-menu-line {
+    width: 30px;
+  }
+
+
+  .cjm-menu-eyebrow-text {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+  }
+
+
+  .cjm-menu-heading {
+    font-size: 38px;
+
+    letter-spacing: -1px;
+
+    line-height: 1.04;
+  }
+
+
+  .cjm-menu-description {
+    margin-top: 18px;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+
+  .cjm-menu-description br {
+    display: none;
+  }
+
+
+  .cjm-menu-cards {
+    grid-template-columns: 1fr;
+
+    max-width: 380px;
+
+    margin: 0 auto;
+
+    gap: 20px;
+  }
+
+
+  .cjm-menu-card {
+    height: 590px;
+  }
+
+
+  .cjm-menu-card-image {
+    height: 350px;
+  }
+
+
+  .cjm-menu-card-content {
+    height: 240px;
+  }
+
+
+  .cjm-menu-card-title {
+    font-size: 26px;
+  }
+
+
+  .cjm-menu-card-text {
+    font-size: 14px;
+  }
+
+
+  .cjm-menu-footer {
+    margin-top: 32px;
+
+    gap: 13px;
+  }
+
+
+  .cjm-footer-logo {
+    width: 65px;
+
+    height: 65px;
+  }
+
+
+  .cjm-footer-divider {
+    height: 52px;
+  }
+
+
+  .cjm-footer-tagline {
+    font-size: 17px;
+  }
+
+
+  .cjm-footer-tagline b {
+    margin: 0 3px;
+
+    font-size: 11px;
+  }
+
+
+  .cjm-footer-brand {
+    font-size: 7px;
+
+    letter-spacing: 3px;
+  }
+
+}
+
+
+/* ============================================================
+   360px
+============================================================ */
+
+@media (max-width: 360px) {
+
+  .cjm-menu-heading {
+    font-size: 32px;
+  }
+
+
+  .cjm-menu-card {
+    height: 550px;
+  }
+
+
+  .cjm-menu-card-image {
+    height: 320px;
+  }
+
+
+  .cjm-menu-card-content {
+    height: 230px;
+  }
+
+
+  .cjm-menu-card-title {
+    font-size: 23px;
+  }
+
+}
