@@ -1,9 +1,16 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
 
 import coffeeBg from "../assets/images/about.png";
 
 function Hero() {
+
+  // Preload hero background image immediately
+  useEffect(() => {
+    const img = new Image();
+    img.src = coffeeBg;
+  }, []);
 
   const openWhatsApp = () => {
     window.open(
@@ -27,7 +34,6 @@ function Hero() {
           {/* ==================================================
               TAGLINE
           ================================================== */}
-
           <span className="tagline">
             PREMIUM COFFEE • FRESH FOOD • COZY ATMOSPHERE
           </span>
@@ -36,7 +42,6 @@ function Hero() {
           {/* ==================================================
               HEADING
           ================================================== */}
-
           <h1>
             Coffee
             <span>Junction</span>
@@ -46,7 +51,6 @@ function Hero() {
           {/* ==================================================
               DESCRIPTION
           ================================================== */}
-
           <p>
             Experience the perfect blend of rich coffee,
             delicious food and a warm atmosphere.
@@ -56,7 +60,6 @@ function Hero() {
           {/* ==================================================
               HERO BUTTONS
           ================================================== */}
-
           <div className="hero-buttons">
 
             {/* Explore Menu */}
