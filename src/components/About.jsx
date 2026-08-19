@@ -1,5 +1,5 @@
 import "./About.css";
-import aboutImg from "../assets/images/about1.png";
+
 import {
   FaCoffee,
   FaHamburger,
@@ -9,16 +9,23 @@ import {
 
 function About() {
   return (
-    <section className="about-section"  id="about" >
+    <section className="about-section" id="about">
 
       {/* LEFT IMAGE */}
       <div className="about-image">
-        <img src={aboutImg} alt="Coffee Junction" />
+
+        <img
+          src="/about1.png"
+          alt="Coffee Junction"
+          loading="eager"
+          decoding="async"
+        />
 
         <div className="about-image-overlay">
           <span>EST.</span>
           <strong>2026</strong>
         </div>
+
       </div>
 
 
@@ -50,62 +57,75 @@ function About() {
 
         <div className="about-line"></div>
 
+
         {/* OFFERINGS */}
         <div className="offerings">
 
           <div className="offering">
+
             <div className="offering-icon">
               <FaCoffee />
             </div>
 
             <div>
               <h4>Handcrafted Coffee</h4>
+
               <p>
                 Rich, freshly prepared coffee made for every coffee lover.
               </p>
             </div>
+
           </div>
 
 
           <div className="offering">
+
             <div className="offering-icon">
               <FaHamburger />
             </div>
 
             <div>
               <h4>Fresh Food</h4>
+
               <p>
                 Burgers, pizzas, snacks and desserts prepared fresh.
               </p>
             </div>
+
           </div>
 
 
           <div className="offering">
+
             <div className="offering-icon">
               <FaGlassCheers />
             </div>
 
             <div>
               <h4>Refreshing Drinks</h4>
+
               <p>
                 Delicious beverages created to match every mood.
               </p>
             </div>
+
           </div>
 
 
           <div className="offering">
+
             <div className="offering-icon">
               <FaHeart />
             </div>
 
             <div>
               <h4>Made With Love</h4>
+
               <p>
                 Quality ingredients, friendly service and genuine care.
               </p>
             </div>
+
           </div>
 
         </div>

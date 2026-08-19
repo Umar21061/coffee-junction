@@ -10,15 +10,9 @@ import {
 
 import { useNavigate } from "react-router-dom";
 
-import coffee from "../assets/images/coffee.png";
-import pizza from "../assets/images/pizza.png";
-import burger from "../assets/images/burger.png";
-import dessert from "../assets/images/desset.png";
-import mint from "../assets/images/mint.png";
-
 const cjmMenuItems = [
   {
-    image: coffee,
+    image: "/coffee.png",
     icon: <FaCoffee />,
     title: "COFFEE &",
     subtitle: "BEVERAGES",
@@ -26,7 +20,7 @@ const cjmMenuItems = [
     line2: "Shakes, Mojitos & more",
   },
   {
-    image: pizza,
+    image: "/pizza.png",
     icon: <FaPizzaSlice />,
     title: "PIZZA",
     subtitle: "",
@@ -34,7 +28,7 @@ const cjmMenuItems = [
     line2: "Pepperoni & Special Pizza",
   },
   {
-    image: burger,
+    image: "/burger.png",
     icon: <FaHamburger />,
     title: "FAST FOOD",
     subtitle: "",
@@ -42,7 +36,7 @@ const cjmMenuItems = [
     line2: "Nuggets, Fries & more",
   },
   {
-    image: dessert,
+    image: "/desset.png",
     icon: <FaIceCream />,
     title: "DESSERTS",
     subtitle: "",
@@ -50,7 +44,7 @@ const cjmMenuItems = [
     line2: "Waffles, Ice Cream",
   },
   {
-    image: mint,
+    image: "/mint.png",
     icon: <FaGlassCheers />,
     title: "MOCKTAILS &",
     subtitle: "REFRESHERS",
@@ -76,6 +70,7 @@ function Menu() {
         <div className="cjm-menu-header">
 
           <div className="cjm-menu-eyebrow">
+
             <span className="cjm-menu-line"></span>
 
             <span className="cjm-menu-eyebrow-text">
@@ -83,6 +78,7 @@ function Menu() {
             </span>
 
             <span className="cjm-menu-line"></span>
+
           </div>
 
           <h2 className="cjm-menu-heading">
@@ -98,6 +94,7 @@ function Menu() {
           </p>
 
         </div>
+
 
         {/* CARDS */}
         <div className="cjm-menu-cards">
@@ -115,11 +112,14 @@ function Menu() {
                 <img
                   src={item.image}
                   alt={`${item.title} ${item.subtitle}`}
+                  loading="lazy"
+                  decoding="async"
                 />
 
                 <div className="cjm-menu-image-overlay"></div>
 
               </div>
+
 
               {/* CONTENT */}
               <div className="cjm-menu-card-content">
@@ -128,6 +128,7 @@ function Menu() {
                 <div className="cjm-menu-card-icon">
                   {item.icon}
                 </div>
+
 
                 {/* TITLE */}
                 <h3 className="cjm-menu-card-title">
@@ -143,10 +144,12 @@ function Menu() {
 
                 </h3>
 
+
                 {/* GOLD DECORATION */}
                 <div className="cjm-menu-card-decoration">
                   <span></span>
                 </div>
+
 
                 {/* TEXT */}
                 <p className="cjm-menu-card-text">
@@ -154,6 +157,7 @@ function Menu() {
                   <br />
                   {item.line2}
                 </p>
+
 
                 {/* EXPLORE BUTTON */}
                 <button
@@ -171,6 +175,7 @@ function Menu() {
           ))}
 
         </div>
+
 
         {/* FOOTER */}
         <div className="cjm-menu-footer">
@@ -191,7 +196,9 @@ function Menu() {
 
           </div>
 
+
           <div className="cjm-footer-divider"></div>
+
 
           <div className="cjm-footer-content">
 

@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
 
-    <!-- Preload Hero Background Image -->
+    <!-- ==================================================
+         HERO IMAGE - HIGHEST PRIORITY
+    ================================================== -->
     <link
       rel="preload"
       as="image"
@@ -11,29 +13,74 @@
       fetchpriority="high"
     />
 
-    <!-- Website Logo / Favicon -->
-    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <!-- ==================================================
+         ABOUT IMAGE
+    ================================================== -->
+    <link
+      rel="preload"
+      as="image"
+      href="%PUBLIC_URL%/about1.png"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ==================================================
+         WEBSITE LOGO
+    ================================================== -->
+    <link
+      rel="icon"
+      href="%PUBLIC_URL%/logo.png"
+    />
 
-    <meta name="theme-color" content="#000000" />
+    <link
+      rel="apple-touch-icon"
+      href="%PUBLIC_URL%/logo.png"
+    />
 
+    <!-- ==================================================
+         VIEWPORT
+    ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <!-- ==================================================
+         THEME
+    ================================================== -->
+    <meta
+      name="theme-color"
+      content="#000000"
+    />
+
+    <!-- ==================================================
+         SEO DESCRIPTION
+    ================================================== -->
     <meta
       name="description"
       content="Coffee Junction - Premium Coffee, Fresh Food & Cozy Atmosphere"
     />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- ==================================================
+         MANIFEST
+    ================================================== -->
+    <link
+      rel="manifest"
+      href="%PUBLIC_URL%/manifest.json"
+    />
 
+    <!-- ==================================================
+         PAGE TITLE
+    ================================================== -->
     <title>Coffee Junction</title>
+
   </head>
 
   <body>
+
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
 
     <div id="root"></div>
+
   </body>
 </html>

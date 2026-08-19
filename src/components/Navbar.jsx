@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
-import logo from "../assets/images/logo.png";
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -66,7 +64,7 @@ function Navbar() {
         onClick={closeMenu}
       >
         <img
-          src={logo}
+          src="/logo.png"
           alt="Coffee Junction"
         />
 
