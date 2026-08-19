@@ -1,16 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
 
-import coffeeBg from "../assets/images/about.png";
-
 function Hero() {
-
-  // Preload hero background image immediately
-  useEffect(() => {
-    const img = new Image();
-    img.src = coffeeBg;
-  }, []);
 
   const openWhatsApp = () => {
     window.open(
@@ -23,7 +14,7 @@ function Hero() {
     <section
       className="hero"
       style={{
-        backgroundImage: `url(${coffeeBg})`
+        backgroundImage: "url('/hero.png')"
       }}
     >
 
