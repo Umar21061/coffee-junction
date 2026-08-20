@@ -64,7 +64,7 @@ function Navbar() {
         onClick={closeMenu}
       >
         <img
-          src="/logo.png"
+          src="/logo.jpeg"
           alt="Coffee Junction"
         />
 
